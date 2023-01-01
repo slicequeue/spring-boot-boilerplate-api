@@ -10,7 +10,7 @@ spring:
   config:
     import: classpath:extra.yml
 
-# ?? ??
+# 로그 설정
 logging:
   config:
     classpath: logback.xml

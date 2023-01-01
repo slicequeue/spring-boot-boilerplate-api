@@ -22,7 +22,7 @@ dependencies {
 
 	/* --- 추가 --- */
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+	runtimeOnly 'io.micrometer:micrometer-registry-prometheus:1.9.5'
 
 	/* --- logback & sl4j 취약점 --- */
 	implementation 'ch.qos.logback:logback-core:1.2.10'
