@@ -7,6 +7,14 @@ spring:
   profiles:
     active: local
 
+  config:
+    import: classpath:extra.yml
+
+# ?? ??
+logging:
+  config:
+    classpath: logback.xml
+
 
 management:
   endpoints:

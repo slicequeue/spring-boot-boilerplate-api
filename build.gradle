@@ -23,6 +23,14 @@ dependencies {
 	/* --- 추가 --- */
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
+	/* --- logback & sl4j 취약점 --- */
+	implementation 'ch.qos.logback:logback-core:1.2.10'
+	implementation 'ch.qos.logback:logback-classic:1.2.10'
+	implementation 'org.slf4j:slf4j-api:1.7.32'
+	implementation 'org.slf4j:jul-to-slf4j:1.7.32'
+	implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.17.1'
+	implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
 }
 
 tasks.named('test') {
