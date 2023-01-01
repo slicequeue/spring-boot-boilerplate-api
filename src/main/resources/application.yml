@@ -1,1 +1,18 @@
+server:
+  port: ${SERVER_PORT:8080}
 
+spring:
+  application:
+    name: 'spring-boot-boilerplate-api'
+  profiles:
+    active: local
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, httptrace, info, metrics, prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}    # Prometheus label name
