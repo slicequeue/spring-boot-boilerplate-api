@@ -9,7 +9,7 @@ Spring Boot RESTful API 전용 프로젝트
 
 ### 사용 라이브러리
 build.gradle 구성 내용 설명
-* JAVA 11
+* JAVA 17
 #### plugin
 * 'org.springframework.boot' version 2.7.5
 #### dependencies
