@@ -26,6 +26,7 @@ dependencies {
 
 	/* --- database --- */
 	runtimeOnly 'com.h2database:h2'
+	testRuntimeOnly 'com.h2database:h2'
 
 	/* --- 추가 --- */
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
